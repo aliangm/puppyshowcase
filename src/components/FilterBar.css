@@ -1,0 +1,110 @@
+.filter-bar {
+  background-color: #000000;
+  border-bottom: 4px solid #000000;
+  padding: 24px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.filter-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.filter-label-box {
+  background-color: #FFFFFF;
+  border: 3px solid #000000;
+  padding: 12px 20px;
+  box-shadow: 4px 4px 0 #6C5CE7;
+}
+
+.filter-label {
+  font-size: 14px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+.filter-btn {
+  background-color: #FFFFFF;
+  border: 3px solid #000000;
+  padding: 12px 20px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 13px;
+  font-weight: 600;
+  color: #000000;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.1s ease;
+  box-shadow: 3px 3px 0 #000000;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.filter-btn:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0 #000000;
+}
+
+.filter-btn:active {
+  transform: translate(3px, 3px);
+  box-shadow: 0 0 0 #000000;
+}
+
+.filter-btn.active {
+  background-color: #FDCB6E;
+  box-shadow: 4px 4px 0 #6C5CE7;
+}
+
+.filter-btn.active:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 #6C5CE7;
+}
+
+.badge {
+  background-color: #6C5CE7;
+  color: #FFFFFF;
+  border: 2px solid #000000;
+  padding: 2px 8px;
+  font-size: 11px;
+  font-weight: 700;
+  min-width: 24px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .filter-container {
+    padding: 0 16px;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filter-label-box {
+    text-align: center;
+  }
+
+  .filter-buttons {
+    justify-content: center;
+  }
+
+  .filter-btn {
+    font-size: 11px;
+    padding: 10px 16px;
+  }
+}
